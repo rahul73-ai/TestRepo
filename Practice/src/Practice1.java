@@ -17,6 +17,7 @@ public class Practice1 {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\rahsahoo\\DesktopJ\\Java 2021\\Practice\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
+		//driver.wait(3000);
 		driver.get("https://sirsxm-cepl-dt1.pegacloud.net/prweb/PRWebLDAP4");
 		/*maximizing*/
 		driver.manage().window().maximize();
@@ -25,7 +26,7 @@ public class Practice1 {
 		driver.findElement(By.id("txtUserID")).sendKeys("CCManager");
 		driver.findElement(By.id("txtPassword")).sendKeys("password");
 		driver.findElement(By.className("loginButton")).click();
-		driver.wait(3000);
+		
 		driver.findElement(By.xpath("//a[@title='New']/i")).click();
 		WebElement element=driver.findElement(By.xpath("//*[contains(text(),'New Interaction')]"));
 		WebDriverWait wait=new WebDriverWait(driver,600);
