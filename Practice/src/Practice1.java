@@ -17,7 +17,8 @@ public class Practice1 {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\rahsahoo\\DesktopJ\\Java 2021\\Practice\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://sirsxm-cepl-dt1.pegacloud.net/prweb/PRWebLDAP4");	
+		driver.get("https://sirsxm-cepl-dt1.pegacloud.net/prweb/PRWebLDAP4");
+		/*maximizing*/
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(100,TimeUnit.SECONDS);
