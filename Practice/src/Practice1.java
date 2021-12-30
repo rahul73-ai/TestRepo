@@ -25,7 +25,7 @@ public class Practice1 {
 		driver.findElement(By.id("txtUserID")).sendKeys("CCManager");
 		driver.findElement(By.id("txtPassword")).sendKeys("password");
 		driver.findElement(By.className("loginButton")).click();
-		//driver.wait(2000);
+		driver.wait(3000);
 		driver.findElement(By.xpath("//a[@title='New']/i")).click();
 		WebElement element=driver.findElement(By.xpath("//*[contains(text(),'New Interaction')]"));
 		WebDriverWait wait=new WebDriverWait(driver,600);
